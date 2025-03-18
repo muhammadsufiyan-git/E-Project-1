@@ -297,3 +297,7 @@ function handlePayNow(event) {
 }
 
 document.querySelector("#payment-section form").addEventListener("submit", handlePayNow);
+
+$(document).ready(function() {
+    $(".contact-container").addClass("show");
+});
