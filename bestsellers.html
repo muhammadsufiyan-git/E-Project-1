@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -209,6 +210,16 @@
                 transform: translateY(0);
             }
         }
+
+        footer{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position:relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -240,7 +251,7 @@
     <div class="sidebar" id="sidebar">
         <button class="close-btn" onclick="toggleSidebar()">✖</button>
         <div class="menu-title">Menu</div>
-        <a href="#" class="menu-item">HOME <span>&#8250;</span></a>
+        <a href="Home.html" class="menu-item">HOME <span>&#8250;</span></a>
         <a href="#card" class="menu-item">SHOP <span>&#8250;</span></a>
         <a href="slider.html" class="menu-item">FEATURED <span>&#8250;</span></a>
         <a href="#pages" class="menu-item">PAGES <span>&#8250;</span></a>
@@ -255,6 +266,10 @@
     <div class="row" id="product-list">
     </div>
     </div>
+
+    <footer>
+        2025 ELITESPEX ALL RIGHTS RESERVED . 
+    </footer>
 
     <script>
         const products = [
@@ -279,7 +294,15 @@
             `;
             productContainer.innerHTML += productHTML;
         });
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            const overlay = document.getElementById("overlay");
+            sidebar.classList.toggle("open");
+            overlay.classList.toggle("open");
+        }
     </script>
+
 
 </body>
 
