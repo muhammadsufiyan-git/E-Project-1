@@ -321,6 +321,7 @@ body {
 .hidden-section {
     display: none;
 }
+
 /* slider close  */
 /* video section open */
 #video-section {
@@ -475,6 +476,34 @@ body {
 }
 
 /* buttons special collection css close */
+/* glasses & lenses css */
+.special-collection {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #E76F51;
+    margin: 5px auto 20px;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* glasses & lenses css close  */
 /* cards start */
 .product-card {
     text-align: center;
@@ -673,6 +702,7 @@ body {
 #payment-section.active~* {
     display: none;
 }
+
 /*cards close */
 /* Testimonials Section */
 .testimonial-box {
@@ -939,6 +969,63 @@ v#reviews-section {
 }
 
 /* reviews section close  */
+/* contact us css  */
+
+.contact-container {
+    background: #e9ecef;
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    height: 100%;
+}
+
+.contact-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.form-control {
+    transition: transform 0.3s ease;
+}
+
+.form-control:focus {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.1);
+}
+
+.address-box {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.map-container {
+    height: 100%;
+    min-height: 430px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* contact us css close   */
 /* footer start */
 .footer {
     background-color: #fff;
