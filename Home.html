@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +44,6 @@
         .btn-custom:hover {
             background-color: #D65A3B;
         }
-
         /* glasses & lenses css close  */
     </style>
 </head>
@@ -60,13 +60,9 @@
             <img src="https://github.com/muhammadsufiyan-git/E-Project/blob/main/logo.png?raw=true" alt="Logo">
         </div>
         <div class="icons">
-            <div class="search-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aKJ9AbwvP0MGcEyOeOw_4XGgMktjq1WMsA&s"
-                    alt="Search" class="search-icon" onclick="toggleSearch()">
-                <div class="search-bar" id="searchBar">
-                    <input type="text" class="search-input" placeholder="Search...">
-                </div>
-            </div>
+            <!-- Search Icon -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aKJ9AbwvP0MGcEyOeOw_4XGgMktjq1WMsA&s" alt="Search Icon" width="40" height="40"
+                style="cursor: pointer;" onclick="openSearch()">
             <a href="one.html"><img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="User" width="40"
                     height="40" style="cursor: pointer;"></a>
             <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="Heart">
@@ -74,11 +70,24 @@
         </div>
     </div>
 
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-content">
+            <h2 class="search-heading">Start Typing and Hit Enter</h2>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search anything..." id="searchInput">
+                <img src="https://cdn-icons-png.flaticon.com/512/751/751463.png" alt="Search Icon" class="search-icon"
+                    onclick="performSearch()">
+            </div>
+        </div>
+        <div class="close-search" onclick="closeSearch()">✖</div>
+    </div>
+
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <button class="close-btn" onclick="toggleSidebar()">✖</button>
         <div class="menu-title">Menu</div>
-        <a href="#" class="menu-item">HOME <span>&#8250;</span></a>
+        <a href="Home.html" class="menu-item">HOME <span>&#8250;</span></a>
         <a href="#card" class="menu-item">SHOP <span>&#8250;</span></a>
         <a href="slider.html" class="menu-item">FEATURED <span>&#8250;</span></a>
         <a href="#pages" class="menu-item">PAGES <span>&#8250;</span></a>
@@ -87,7 +96,6 @@
 
     <!-- Overlay -->
     <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
-
     <!-- Carousel -->
     <div id="glassesCarousel" class="carousel slide hidden" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
