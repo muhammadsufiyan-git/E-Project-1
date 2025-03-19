@@ -15,38 +15,15 @@ function toggleSidebar() {
     sidebar.classList.toggle('open');
     overlay.classList.toggle('active');
 }
-
-// Toggle search bar
-function toggleSearch() {
-    const searchBar = document.getElementById('searchBar');
-    searchBar.style.display = searchBar.style.display === 'block' ? 'none' : 'block';
+// search bar 
+function openSearch() {
+    document.getElementById('searchOverlay').classList.add('active');
 }
 
-function toggleSidebar() {
-    document.getElementById('sidebar').classList.toggle('open');
-    document.getElementById('overlay').classList.toggle('active');
+function closeSearch() {
+    document.getElementById('searchOverlay').classList.remove('active');
 }
-
-function toggleSearch() {
-    const searchBar = document.getElementById('searchBar');
-    const overlay = document.createElement('div');
-    overlay.classList.add('overlay');
-    document.body.appendChild(overlay);
-
-    if (searchBar.style.display === 'block') {
-        searchBar.style.display = 'none';
-        overlay.classList.remove('active');
-    } else {
-        searchBar.style.display = 'block';
-        overlay.classList.add('active');
-    }
-
-    overlay.onclick = function () {
-        searchBar.style.display = 'none';
-        overlay.classList.remove('active');
-    };
-}
-
+// search bar close 
 
 let currentIndex = 0;
 const reviewsWrapper = document.querySelector('.reviews-wrapper');
@@ -300,4 +277,4 @@ document.querySelector("#payment-section form").addEventListener("submit", handl
 
 $(document).ready(function() {
     $(".contact-container").addClass("show");
-});
+})
