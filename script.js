@@ -242,39 +242,24 @@ function showSection(sectionId) {
     document.getElementById('glasses-section').classList.add('hidden-section');
     document.getElementById('lenses-section').classList.add('hidden-section');
     document.getElementById('product-details-section').classList.add('hidden-section');
-    document.getElementById('payment-section').classList.add('hidden-section');
     document.getElementById(sectionId).classList.remove('hidden-section');
 }
 
 showSection('glasses-section');
 
-function showPaymentSection() {
-    document.getElementById('product-details-section').classList.remove('active');
-    document.getElementById('payment-section').classList.add('active');
-}
 
-function goBackToProductDetails() {
-    document.getElementById('payment-section').classList.remove('active');
-    document.getElementById('product-details-section').classList.add('active');
-}
+
 
 function goBack() {
     document.getElementById('product-details-section').classList.remove('active');
-    document.getElementById('payment-section').classList.remove('active');
 }
 
-function handlePayNow(event) {
-    event.preventDefault();
 
-    setTimeout(() => {
-        alert("Payment successful! Redirecting to the main page...");
-        document.getElementById('payment-section').classList.remove('active');
-        showSection('glasses-section');
-    }, 1000);
-}
 
 document.querySelector("#payment-section form").addEventListener("submit", handlePayNow);
 
 $(document).ready(function() {
     $(".contact-container").addClass("show");
-})
+});
+
+
