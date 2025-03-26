@@ -74,73 +74,73 @@ document.addEventListener("DOMContentLoaded", function () {
 const products = {
     glasses1: {
         title: "Oval Flat Lens Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product60.jpg?v=1704550117",
+        img: "../images/glasses1.jpg",
         price: "$89.00",
         desc: "These stylish oval flat lens sunglasses are perfect for sunny days."
     },
     glasses2: {
         title: "Nina Cat Eye Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product59.jpg?v=1704550114",
+        img: "../images/glasses2.jpg",
         price: "$145.00",
         desc: "Elegant cat-eye sunglasses for a chic look."
     },
     glasses3: {
         title: "Clubmaster Square Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product56.jpg?v=1704550108",
+        img: "../images/glasses3.jpg",
         price: "$430.00",
         desc: "Classic square sunglasses for a timeless look."
     },
     glasses4: {
         title: "Clubmaster Square Prescription",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product47.jpg?v=1704550096",
+        img: "../images/glasses4.jpg",
         price: "$212.00",
         desc: "Prescription sunglasses with a square frame."
     },
     glasses5: {
         title: "Octagonal Flat Lens Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product39.jpg?v=1704550075",
+        img: "../images/glasses5.jpg",
         price: "$32.00",
         desc: "Unique octagonal sunglasses for a modern look."
     },
     glasses6: {
         title: "Clubround Round Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product31.jpg?v=1704550061",
+        img: "../images/glasses6.jpg",
         price: "$42.00",
         desc: "Round sunglasses for a retro vibe."
     },
     glasses7: {
         title: "Prescription Eyeglass Frames",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product40.jpg?v=1704550079",
+        img: "../images/glasses7.jpg",
         price: "$22.00",
         desc: "Stylish prescription eyeglass frames."
     },
     glasses8: {
         title: "Double Round Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product25.jpg?v=1704550053",
+        img: "../images/glasses8.jpg",
         price: "$21.00",
         desc: "Double round sunglasses for a unique look."
     },
     glasses9: {
         title: "Hexagonal Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product59.jpg?v=1704550114",
+        img: "../images/glasses9.jpg",
         price: "$12.00",
         desc: "Hexagonal sunglasses for a bold statement."
     },
     glasses10: {
         title: "Liteforce Square Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product39.jpg?v=1704550075",
+        img: "../images/glasses10.jpg",
         price: "$80.00",
         desc: "Lightweight square sunglasses for comfort."
     },
     glasses11: {
         title: "Gradient Aviator Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product13.jpg?v=1704550029",
+        img: "../images/glasses11.jpg",
         price: "$211.00",
         desc: "Gradient aviator sunglasses for a stylish look."
     },
     glasses12: {
         title: "Aviator Sunglasses",
-        img: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product39.jpg?v=1704550075",
+        img: "../images/glasses12.jpg",
         price: "$312.00",
         desc: "Classic aviator sunglasses for a timeless style."
     },
@@ -148,73 +148,73 @@ const products = {
     // Lenses Products
     lenses1: {
         title: "Blue Light Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/freshkon-mosaic.jpg",
+        img: "../images/lenses1.jpg",
         price: "$79.00",
         desc: "These blue light lenses reduce eye strain from screens."
     },
     lenses2: {
         title: "Anti-Reflective Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/freshkon-mosaic-1-copy.webp",
+        img: "../images/lenses2.jpg",
         price: "$99.00",
         desc: "Reduce glare with these anti-reflective lenses."
     },
     lenses3: {
         title: "Transition Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/freshlook-copy-2.jpg",
+        img: "../images/lenses3.jpg",
         price: "$149.00",
         desc: "Lenses that adjust to light conditions."
     },
     lenses4: {
         title: "Multifocal Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/freshlook-oneday.jpg",
+        img: "../images/lenses4.jpg",
         price: "$249.00",
         desc: "Seamless vision correction for all distances."
     },
     lenses5: {
         title: "Polarized Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/bella-diamond-aseel-new.webp",
+        img: "../images/lenses5.jpg",
         price: "$89.00",
         desc: "Polarized lenses for reduced glare."
     },
     lenses6: {
         title: "Photochromic Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/bella-glow.jpg",
+        img: "../images/lenses6.jpg",
         price: "$129.00",
         desc: "Lenses that darken in sunlight."
     },
     lenses7: {
         title: "UV Protection Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/avaira-vitality-toric-1.webp",
+        img: "../images/lenses7.jpg",
         price: "$59.00",
         desc: "Lenses with 100% UV protection."
     },
     lenses8: {
         title: "High-Index Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/bella-elite-copy-2.jpg",
+        img: "../images/lenses8.jpg",
         price: "$199.00",
         desc: "Thin and lightweight high-index lenses."
     },
     lenses9: {
         title: "Anti-Fog Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/one-day-1-scaled-1.webp",
+        img: "../images/lenses9.jpg",
         price: "$69.00",
         desc: "Lenses that prevent fogging."
     },
     lenses10: {
         title: "Scratch-Resistant Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/bella-diamond-box-copy-6.jpg",
+        img: "../images/lenses10.jpg",
         price: "$79.00",
         desc: "Durable scratch-resistant lenses."
     },
     lenses11: {
         title: "Blue Light Blocking Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/bella-natural-copy-3-1.jpg",
+        img: "../images/lenses11.jpg",
         price: "$89.00",
         desc: "Lenses that block harmful blue light."
     },
     lenses12: {
         title: "Progressive Lenses",
-        img: "https://ainak.pk/wp-content/uploads/2024/09/acuvue-1day.jpg",
+        img: "../images/lenses12.jpg",
         price: "$299.00",
         desc: "Progressive lenses for seamless vision."
     }
@@ -247,19 +247,13 @@ function showSection(sectionId) {
 
 showSection('glasses-section');
 
-
-
-
 function goBack() {
     document.getElementById('product-details-section').classList.remove('active');
 }
-
-
 
 document.querySelector("#payment-section form").addEventListener("submit", handlePayNow);
 
 $(document).ready(function() {
     $(".contact-container").addClass("show");
 });
-
 
