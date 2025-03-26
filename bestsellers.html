@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -211,12 +210,12 @@
             }
         }
 
-        footer{
+        footer {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
-            position:relative;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -233,17 +232,16 @@
             <div class="bar"></div>
         </div>
         <div class="logo">
-            <img src="https://github.com/muhammadsufiyan-git/E-Project/blob/main/logo.png?raw=true" alt="Logo">
+            <img src="../images/logo.png" alt="Logo">
         </div>
         <div class="icons">
-            <div class="search-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aKJ9AbwvP0MGcEyOeOw_4XGgMktjq1WMsA&s"
-                    alt="Search" class="search-icon" onclick="toggleSearch()">
-            </div>
-            <a href="one.html"><img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="User" width="40"
-                    height="40" style="cursor: pointer;"></a>
-            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="Heart">
-            <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Cart">
+            <!-- Search Icon -->
+            <img src="../images/search-icon.png" alt="Search Icon" width="40" height="40" style="cursor: pointer;"
+                onclick="openSearch()">
+            <a href="one.html"><img src="../images/user-icon.png" alt="User" width="40" height="40"
+                    style="cursor: pointer;"></a>
+            <img src="../images/heart-icon.png" alt="Heart">
+            <img src="../images/cart-icon.png" alt="Cart">
         </div>
     </div>
 
@@ -251,11 +249,11 @@
     <div class="sidebar" id="sidebar">
         <button class="close-btn" onclick="toggleSidebar()">✖</button>
         <div class="menu-title">Menu</div>
-        <a href="Home.html" class="menu-item">HOME <span>&#8250;</span></a>
-        <a href="#card" class="menu-item">SHOP <span>&#8250;</span></a>
+        <a href="home.html" class="menu-item">HOME <span>&#8250;</span></a>
+        <a href="home.html" class="menu-item">SHOP <span>&#8250;</span></a>
         <a href="slider.html" class="menu-item">FEATURED <span>&#8250;</span></a>
-        <a href="#pages" class="menu-item">PAGES <span>&#8250;</span></a>
-        <a href="#footer" class="menu-item">BLOGS <span>&#8250;</span></a>
+        <a href="home.html" class="menu-item">PAGES <span>&#8250;</span></a>
+        <a href="home.html" class="menu-item">BLOGS <span>&#8250;</span></a>
     </div>
 
     <!-- Overlay -->
@@ -268,14 +266,14 @@
     </div>
 
     <footer>
-        2025 ELITESPEX ALL RIGHTS RESERVED . 
+        2025 ELITESPEX ALL RIGHTS RESERVED .
     </footer>
 
     <script>
         const products = [
-            { name: "Product 1", price: "$49.99", image: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product60.jpg?v=1704550117" },
-            { name: "Product 2", price: "$59.99", image: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product59.jpg?v=1704550114" },
-            { name: "Product 3", price: "$69.99", image: "https://klasie-store-demo.myshopify.com/cdn/shop/products/product56.jpg?v=1704550108" }
+            { name: "Oval Flat Lens Sunglasse", price: "$49.99", image: "../images/glasses1.jpg" },
+            { name: "Nina Cat Eye Sunglasses", price: "$59.99", image: "../images/glasses2.jpg" },
+            { name: "Clubmaster Square Sunglasses", price: "$69.99", image: "../images/glasses3.jpg" }
         ];
 
         const productContainer = document.getElementById("product-list");
@@ -302,7 +300,6 @@
             overlay.classList.toggle("open");
         }
     </script>
-
 
 </body>
 
